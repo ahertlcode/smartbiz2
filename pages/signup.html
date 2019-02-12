@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="text/html">
+    <link rel="stylesheet" href="../bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <!--link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"-->
+    <title>SmartBiz</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-brand">
+          <h1 class="is-title is-2">
+            SmartBiz
+          </h1>
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+      </div>
+      <div class="navbar-menu navbar-end">
+        <div class="level-item">
+          <a class="navbar-item" href="../index.html"><i class="fa fa-home"></i>&nbsp;Home</a>
+          <a class="navbar-item" href="../pages/smartbiz.html.php">SmartBiz<sup>&reg</sup></a>
+          <a class="navbar-item" href="../pages/about.html.php">About Us</a>
+          <a class="navbar-item" href="../pages/services.html.php">Services</a>
+          <a class="navbar-item" href="../pages/contact.html.php">Contact Us</a>
+          <a class="navbar-item" href="../pages/faq.html.php">FAQ</a>
+        </div>
+      </div>
+    </nav>
+  <div class="columns">
+    <div class="column ng-scope" ng-app="ntb-app" ng-controller="signIn">
+      <div class="notification-hide ng-binding"></div>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt adipisci maiores fuga ad repudiandae illum quod iste? Accusamus cumque amet modi laudantium quod beatae doloribus dolorem, nobis qui neque?</p>
+    </div>
+    <div class="column is-one-third">
+      <form class="box ng-pristine ng-valid" action="">
+        <h2>Authenticate</h2>
+        <div class="field">
+          <label class="label" for="mail">E-mail</label>
+          <div class="control has-icons-left">
+            <input type="email" class="input ng-pristine ng-untouched ng-valid ng-empty" ng-model="signin.email" name="mail" id="mail" placeholder="E-mail" required>
+            <span class="icon is-small is-left">
+              <i class="fa fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="pwd">Password</label>
+            <div class="control has-icons-left">
+              <input type="password" id="pwd" name="pwd" class="input" placeholder="******" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-lock"></i>
+              </span>
+          </div>
+        </div>
+        <div class="field">
+          <input type="checkbox">Remember me on this device.<br>
+        </div>
+        <div class="field">
+          <a href="password.html.php">Forgot Password? Reset it</a>
+        </div>
+        <div id="captcha"></div>
+        <div class="field">
+          <button class="button is-link is-rounded"><i class="fa fa-sign-in-alt">&nbsp;</i> Sign In</button>
+        </div>
+      </form>
+      <form class="box" action="login.php">
+        <h2>Sign Up</h2>
+        <div class="field">
+          <label for="fname" class="label">Firstname</label>
+            <div class="control has-icons-left">
+              <input type="text" id="fname" class="input" placeholder="Ayodele" name="fname" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-user"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="lname" class="label">Lastname</label>
+            <div class="control has-icons-left">
+              <input type="text" class="input" id="lname" name="lname" placeholder="Musa" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-user"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email" class="label">E-mail</label>
+            <div class="control has-icons-left">
+              <input type="email" class="input" id="email" name="email" placeholder="Adiele@gmail.com" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="phone" class="label">Mobile</label>
+            <div class="control has-icons-left">
+              <input type="text" class="input" id="phone" name="phone" placeholder="+234 812 3456 789" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-phone"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="pswd" class="label">Password</label>
+            <div class="control has-icons-left">
+              <input type="password" class="input" id="pswd" name="pswd" placeholder="********" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-lock"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="conpwd" class="label">Confirm Password</label>
+            <div class="control has-icons-left">
+              <input type="password" class="input" id="conpwd" name="conpwd" placeholder="********" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-lock"></i>
+              </span>
+            </div>
+          </div>
+          <div class="field">
+            <input type="checkbox" required>I accept the terms and conditions of smartbiz<br>
+          </div>
+          <div class="field">
+            <button class="button is-danger is-rounded"><i class="fa fa-edit">&nbsp;</i> Sign Up</button>
+          </div>
+      </form>
+    </div>
+  </div>
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function() {
+      
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+      
+        });
+      });
+    </script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="../angular/angular.min.js"></script>
+    <script src="custom/js/master.js"></script>
+    <script src="../javascript/signin.js"></script>
+    <script src="../javascript/catpcha.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          //Get all navbar-burger elements
+          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+           //Check if there are any navbar burgers
+          if ($navbarBurgers.length > 0) {
+              //Add a click event on each of them
+              $navbarBurgers.forEach(el => {
+                  el.addEventListener('click', () => {
+                       //Get the target from the data-target attribute
+                      const target = el.dataset.target;
+                      const $target = document.getElementById(target);
+                       //Toggle the is-active class on both the navbar-burger and the navbar-menu
+                      el.classList.toggle('is-active');
+                      $target.classList.toggle('is-active');
+                  });
+              });
+          }
+      });
+    </script>
+    <script type="text/javascript">
+    const button = document.getElementsByTagName('button')[0];
+    button.disabled = true;
+    const captcha = document.getElementById('captcha');
+    captcha.addEventListener('captcha.success', function() {
+        button.disabled = false;
+    });
+    captcha.addEventListener('captcha.failed', function() {
+        button.disabled = true;
+    });
+    </script>
+</body>
+</html>
